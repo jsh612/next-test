@@ -1,21 +1,11 @@
-import { NextPage } from "next";
-import Link from "next/link";
-import Layout from "../../components/Layout";
+import Nav from "../../components/Nav";
 
-const Groups: NextPage = () => {
-  return (
-    <Layout title="Home | Next.js + TypeScript Example">
-      <>
-        <p>
-          <h1>그룹페이지</h1>
-        </p>
-        <Link href="groups/detail">
-          <a>그룹 deatil</a>
-        </Link>
-      </>
-      ;
-    </Layout>
-  );
-};
+// React.Fragment
+export default () => (
+  <>
+    <Nav />
+    <h1>Groups</h1>
 
-export default Groups;
+    <button className="btn btn-primary">Groups Button</button>
+  </>
+);

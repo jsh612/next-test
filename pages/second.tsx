@@ -1,16 +1,14 @@
-import React from "react";
-import { NextPage } from "next";
-import {} from "bootstrap";
+import Nav from "../components/Nav";
+import Head from "next/head";
 
-const Second: NextPage = () => {
-  return (
-    <>
-      <div>두번째 페이지</div>
-      <button type="button" className="btn btn-primary">
-        Primary
-      </button>
-    </>
-  );
-};
-
-export default Second;
+// JSX : Javascirpt + XML
+export default () => (
+  <div>
+    <Head>
+      <title>2nd page</title>
+    </Head>
+    <Nav />
+    2nd Page
+    <button className="btn btn-primary">Button</button>
+  </div>
+);
